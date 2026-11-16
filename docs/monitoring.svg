@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="360" fill="#f7f6f2"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#4a5560"/></marker></defs>
+  <text x="30" y="40" font-size="20" font-weight="700" fill="#1d2630">Monitoring that reports its own outage</text>
+  <rect x="30" y="70" width="270" height="170" rx="12" fill="#fdf1e7" stroke="#c46a1c"/>
+  <text x="48" y="98" font-size="16" font-weight="700" fill="#1d2630">Edge worker (off the server)</text>
+  <text x="48" y="122" font-size="12.5" fill="#33404c">HTTPS checks of every hostname</text>
+  <text x="48" y="142" font-size="12.5" fill="#33404c">Reads the on-server report and</text>
+  <text x="48" y="160" font-size="12.5" fill="#33404c">flags it if it goes stale</text>
+  <text x="48" y="184" font-size="12.5" fill="#33404c">Answers "is it up?"</text>
+  <text x="48" y="206" font-size="12.5" fill="#33404c">Free tier: costs nothing</text>
+  <rect x="345" y="70" width="270" height="170" rx="12" fill="#e8f1ef" stroke="#2f7d72"/>
+  <text x="363" y="98" font-size="16" font-weight="700" fill="#1d2630">Timer on the server</text>
+  <text x="363" y="122" font-size="12.5" fill="#33404c">Starts the health job; checks</text>
+  <text x="363" y="142" font-size="12.5" fill="#33404c">certificate expiry; checks the</text>
+  <text x="363" y="160" font-size="12.5" fill="#33404c">edge worker is still running</text>
+  <text x="363" y="184" font-size="12.5" fill="#33404c">Answers "is it healthy?"</text>
+  <rect x="660" y="70" width="270" height="170" rx="12" fill="#e8eef7" stroke="#3b6aa8"/>
+  <text x="678" y="98" font-size="16" font-weight="700" fill="#1d2630">Health report</text>
+  <text x="678" y="122" font-size="12.5" fill="#33404c">Disk, containers, backups,</text>
+  <text x="678" y="142" font-size="12.5" fill="#33404c">databases, AI credential errors</text>
+  <text x="678" y="166" font-size="12.5" fill="#33404c">Facts and counts only: never</text>
+  <text x="678" y="184" font-size="12.5" fill="#33404c">log text, names or keys</text>
+  <text x="678" y="208" font-size="12.5" fill="#33404c">No new credential, no open port</text>
+  <line x1="300" y1="140" x2="343" y2="140" stroke="#4a5560" stroke-width="1.6" marker-end="url(#a)"/>
+  <line x1="345" y1="165" x2="302" y2="165" stroke="#4a5560" stroke-width="1.6" marker-end="url(#a)"/>
+  <line x1="615" y1="155" x2="658" y2="155" stroke="#4a5560" stroke-width="1.6" marker-end="url(#a)"/>
+  <path d="M795,240 C795,300 165,300 165,242" fill="none" stroke="#4a5560" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a)"/>
+  <text x="270" y="310" font-size="12" fill="#5b6670">read with a read-only token; a report over 100 minutes old means the server is down</text>
+  <text x="30" y="345" font-size="13" fill="#1d2630">Any failure opens a GitHub issue. A fallback check in CI runs only while the edge worker is down.</text>
+</svg>
